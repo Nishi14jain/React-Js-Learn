@@ -1,0 +1,60 @@
+/* Ensure the form container takes up full height minus the header */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 60px); /* Adjust the 60px based on your header's height */
+    padding-top: 60px; /* Adds space to avoid overlapping with the header */
+    box-sizing: border-box;
+}
+
+/* Style the form itself */
+.sign-up-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Style the form elements */
+.sign-up-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.sign-up-form div {
+    margin-bottom: 15px;
+}
+
+.sign-up-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.sign-up-form input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.sign-up-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.sign-up-form button:hover {
+    background-color: #0056b3;
+}

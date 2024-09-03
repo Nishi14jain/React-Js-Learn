@@ -1,0 +1,52 @@
+.header {
+    background-color: #333;
+    padding: 20px;
+    color: white;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 0 15px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  .login-icon {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .login-icon svg {
+    color: white;
+  }
+  
+  .login-icon svg:hover {
+    color: #ddd;
+  }
+  .logout{
+    color: #ffff;
+    margin-left: 20px;
+  }
