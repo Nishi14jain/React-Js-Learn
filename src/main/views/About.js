@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
-
+import '../css/notesStyle.css'
+import FloatingLabel from 'react-bootstrap/FloatingLabel';
+import Form from 'react-bootstrap/Form';
+import { Card, Container, Button } from 'react-bootstrap';
 const Notepad = () => {
   const [note, setNote] = useState('');
   const [savedNotes, setSavedNotes] = useState([]);
@@ -38,35 +41,46 @@ const Notepad = () => {
   };
 
   return (
-    <div style={{ padding: '20px' }}>
-      <h2>Notepad</h2>
-      <textarea
+    <Container fluid className='bg'>
+    {/* <div style={{ padding: '20px' }}> */}
+
+      <Card className='cardborder'>
+       <Card.Body className='cdBody'>
+       <h2 className='head'>Notepad</h2>
+    
+    <FloatingLabel controlId="floatingTextarea2" label="Write your note here...">
+      <Form.Control
+        as="textarea"
         value={note}
-        onChange={handleNoteChange}
-        rows="4"
-        cols="50"
-        placeholder="Write your note here..."
-        style={{ width: '100%', marginBottom: '10px' }}
-      />
-      <button onClick={saveNote} style={{ marginRight: '10px' }}>
-        Save Note
-      </button>
-      <h3>Saved Notes</h3>
-      <ul>
-        {savedNotes.map((savedNote, index) => (
-          <li key={index} style={{ marginBottom: '10px' }}>
-            {savedNote}
-            <button
-              onClick={() => deleteNote(index)}
-              style={{ marginLeft: '10px', color: 'red' }}
-            >
-              Delete
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
+        onChange={handleNoteChange} rows="4" cols="50" placeholder="Write your note here..." style={{ height: '100px'}}/>
+    </FloatingLabel>
+    <Button onClick={saveNote} className='btnnn'>
+    Save Note
+    </Button>
+  
+    <h3 className='head' style={{textAlign:'center', marginTop:'20px'}}>Saved Notes</h3>
+    <ul>
+      {savedNotes.map((savedNote, index) => (
+        <li key={index} style={{ marginBottom: '10px' }}>
+          {savedNote}
+          <button
+            onClick={() => deleteNote(index)}
+            style={{ marginLeft: '10px', color: 'red' }}
+          >
+            Delete
+          </button>
+        </li>
+      ))}
+    </ul>
+       </Card.Body>
+      </Card>
+     
+    {/* </div> */}
+    </Container>
   );
 };
 
 export default Notepad;
+
+
+
