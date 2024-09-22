@@ -1,3 +1,158 @@
-.col{
+/* .col{
  border:2px solid red; 
+} */
+
+body {
+    background-image: url('../images/bgimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will fix the background */
+    margin: 0;
+    color: #fff;
 }
+
+.top-right-col {
+    background-color: #fff;
+    opacity: 0.8; /* Adjust opacity to make the background less transparent */
+    margin: 0;
+    padding: 0;
+    color: #000;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+}
+.info_head{
+    font-weight: 700;
+    color: #AC0D7A;
+}
+
+tbody tr {
+    border-bottom: none; /* Removes the bottom border of each row */
+}
+
+td {
+    font-size: 20px;
+    border-bottom: none; 
+    font-weight: 700;/* Removes the bottom border of each cell */
+}
+.education_head{
+    color: #DEF7A4;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.edu_content{
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+}
+.row2{
+    background-color: #fff;
+    opacity: 0.8;
+    color: #000;
+    margin-top: 80px;
+    height: 100%;
+}
+
+.ideas {
+    font-size: 60px;  
+    color: #D9158C; /* Adjust this color as needed */
+}
+
+.li{
+    color: #fff;
+}
+.socialIcons {
+    /* background-color: rgba(255, 255, 255, 0.2); White background with 20% opacity */
+    padding: 2px;
+    margin: 5px;
+    font-size: 25px;
+    color: #fff; /* Black text with 100% opacity */
+    opacity: 1;  /* Ensure the text has 100% opacity */
+}
+.iconDiv{
+     background-color: rgba(255, 255, 255, 0.2);
+     width: 20%;
+     border-radius: 30px;
+     margin-left: 40%;
+     padding: 10px;
+     margin-top: 50px;
+     display: flex;
+}
+
+.create{
+    background-color: #AC0D7A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 900;
+    border-radius: 5px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.callme{
+    background-color: #AC0D7A;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: 900;
+    border-radius: 5px;
+    margin: 10px;
+    
+}
+
+.ideas{
+    background-image: -webkit-linear-gradient(to right, #9CA4A5, #D9158C); /* For Safari and older versions of Chrome */
+    background-image: -moz-linear-gradient(to right, #9CA4A5, #D9158C); /* For Firefox */
+    background-image: -o-linear-gradient(to right, #9CA4A5, #D9158C); /* For older versions of Opera */
+    background-image: linear-gradient(to right, #9CA4A5, #D9158C); /* Standard syntax */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.aboutMe{
+ font-size: 20px;
+}
+.main-sub-con{
+    width: 50%;
+}
+@media (max-width: 992px) {
+    .table-body-details tr{
+        display: inline-table;
+        
+    }
+    .table-body-details td{
+        display: block;
+        
+    }
+    .table-body-details tr td{
+       text-align: center !important;
+    }
+    .main-image{
+        display: none;
+    }
+    .main-sub-con{
+        width: 100%;
+    }
+   
+  }
+  
+  @media (max-width: 600px) {
+    .table-body-details tr{
+        display: inline-table;
+        
+    }
+    .table-body-details td{
+        display: block;
+        
+    }
+    .table-body-details tr td{
+       text-align: center !important;
+    }
+    .main-sub-con{
+        width: 100%;
+    }
+  }

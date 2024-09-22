@@ -1,9 +1,11 @@
-import { Container, Row, Col } from 'react-bootstrap';
+import { Container, Row, Col, Image} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Carousel from 'react-bootstrap/Carousel';
 import image1 from '../images/self-love-7200173_1280.jpg';
 import image2 from '../images/woman-7306978_1280.jpg';
 import image3 from '../images/woman-8144573_1280.png'
+import me1 from '../images/me1.png'
+
 import Card from 'react-bootstrap/Card';
 
 import '../js/bootStrap.js';
@@ -40,55 +42,24 @@ function Index() {
         </Carousel>
       </row>
 
-      <Row>
+      <Row style={{margin:'0'}}>
         <Col style={{display:'flex', justifyContent:'space-between', margin:'10px'}} >
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
+        <Image className='me_img' src={me1} thumbnail style={{width:"100%"}} />
+
         </Col>
         <Col style={{display:'flex', justifyContent:'space-between', margin:'10px'}}>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>Card Title</Card.Title>
-              <Card.Text>
-                Some quick example text to build on the card title and make up the
-                bulk of the card's content.
-              </Card.Text>
-              <Button variant="primary">Go somewhere</Button>
-            </Card.Body>
-          </Card>
-          </Col>
+         <div>
+         <h1 className='me1'>
+            Nishi Jain 
+           </h1>
+           <p>
+           You are a software developer with 1.5 years of experience, particularly skilled in PHP and Laravel. You've worked on several projects, refining your expertise in building robust web applications, and you're currently exploring new opportunities for a job change.
+           </p>
+         </div>
+
+       
+          
+        </Col>
       </Row>
 
     </Container>

@@ -4,6 +4,10 @@ import Index from "../views/index";
 import About from "../views/About";
 import SignUP from "../views/SignUp";
 import Login from "../views/Login";
+import Contact from "../views/Contact";
+import PortFolio from "../views/PortfolioForm";
+
+
 // RouteConfig.js
 import ProtectedRoute from './components/ProtectedRoute'; // Correct import statement
 
@@ -18,9 +22,11 @@ const RouteConfig = () => {
        <Routes>
         <Route path="/signup" element={<SignUP />} />  {/* Additional route for the About page */}
         <Route path="/login" element={<Login />} />  {/* Additional route for the About page */}
+        <Route path="/portforlioform" element={<PortFolio />} />  {/* Additional route for the About page */}
        
         <Route path="/" element={ <ProtectedRoute><Index /></ProtectedRoute> } />   {/* "/" path for the index page */}
         <Route path="/about" element={ <ProtectedRoute><About /></ProtectedRoute> } />  {/* Additional route for the About page */}
+        <Route path="/contact" element={ <ProtectedRoute><Contact /></ProtectedRoute> } />  {/* Additional route for the About page */}
         
        </Routes>
     ); 

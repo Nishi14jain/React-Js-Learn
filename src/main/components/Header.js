@@ -20,7 +20,7 @@ const Header = () => {
                 <ul className="nav-links">
                     <li><Link to="/">Home</Link></li> {/* Use Link instead of a */}
                     <li><Link to="/about">About</Link></li> {/* Use Link for About */}
-                    <li><Link to="#contact">Contact</Link></li> {/* Same for Contact */}
+                    <li><Link to="/contact">Contact</Link></li> {/* Same for Contact */}
                 </ul>
                 <div className="login-icon">
                     <a href="/signup"><FaUser size={24} /></a>
